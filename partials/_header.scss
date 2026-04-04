@@ -1,0 +1,76 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #242021;
+
+
+    // O '&', referencia diretamente o nome do seletor pai, sem espaços!
+    &-logo {
+        max-width: 150px; 
+        height: auto;
+    }
+
+    &-icons {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        a {
+            text-decoration: none;
+
+            i {
+                color: $white-normal;
+                transition: color 0.3s ease;
+            }
+
+            &:hover i {
+                color: $red-light;
+                animation: translateY 0.8s infinite alternate;
+            }
+        }
+    }
+}
+
+@keyframes translateY {
+    from {
+        transform: translateY(0) scale(1);
+    }
+    to {
+        transform: translateY(-8px) scale(1.1);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        padding: 24px 48px;
+
+        &-logo {
+            max-width: 200px;
+        }
+        
+        &-icons {
+            gap: 32px;
+        }
+    }
+}
+
+.header-icons {
+    justify-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+i {
+    color: $white-normal;
+}
+
+.header-button:hover {
+    border: 1px solid $red-light;
+    background-color: $red-light;
+}

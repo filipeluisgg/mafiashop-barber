@@ -1,0 +1,17 @@
+.presentation {
+    padding: 0px 16px;
+    text-align: center;
+
+    &-title {
+        color: $white-normal;
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    &-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 16px;
+    }
+}
+
