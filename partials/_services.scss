@@ -1,0 +1,81 @@
+.services {
+    background-color: #1b1c20;
+    margin: 80px 16px 0; 
+    padding: 48px 24px;
+    border-radius: 15px;
+    color: $white-normal;
+
+    &-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: clamp(8px, 2vw, 16px);
+        font-size: clamp(20px, 6vw, 32px);
+        margin-bottom: 48px;
+
+        img {
+            width: clamp(32px, 8vw, 48px);
+            height: auto;
+            flex-shrink: 0;
+        }
+    }    
+
+    &-name {
+        flex-shrink: 1; // Permite que o nome ocupe o espaço necessário
+    }
+
+    &-price {
+        white-space: nowrap; // Impede que o "R$" se separe do número
+        flex-shrink: 0;      // Garante que o preço nunca seja esmagado
+    }
+
+    &-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        flex: 1;
+    }
+
+    &-item {
+        display: flex;
+        align-items: baseline;
+        // Tipografia fluida: min 14px, ideal 4vw, max 20px
+        font-size: clamp(14px, 4vw, 20px); 
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    &-line {
+        flex-grow: 1;
+        border-bottom: 3px dotted #F5B921;
+        margin: 0 8px; // Reduzido para mobile para ganhar espaço
+        opacity: 0.8;
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        max-width: 1000px;
+        margin: 0 auto;
+
+        @media screen and (min-width: 900px) {
+            flex-direction: row;
+            align-items: stretch;
+            gap: 48px;
+        }
+    }
+
+    &-divider {
+        border: none;
+        background-color: #454649;
+        width: 100%;
+        height: 1px;
+
+        @media screen and (min-width: 900px) {
+            width: 1px;
+            height: auto;
+        }
+    }
+}
