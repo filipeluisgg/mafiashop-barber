@@ -10,8 +10,32 @@
 
     &-gallery {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-columns: 1fr; 
         gap: 16px;
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+
+            // Oculta a 4ª imagem na visualização mobile (1 coluna)
+            &:nth-child(4) {
+                display: none;
+            }
+        }
+
+        // Breakpoint para Tablets (exibe 2 colunas e 4 fotos)
+        @media screen and (min-width: 576px) {
+            grid-template-columns: repeat(2, 1fr);
+
+            img:nth-child(4) {
+                display: block; // Reexibe a 4ª imagem
+            }
+        }
+
+        // Breakpoint para Desktop (exibe 4 colunas e 4 fotos)
+        @media screen and (min-width: 900px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
     }
 }
-

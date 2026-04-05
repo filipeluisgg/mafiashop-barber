@@ -1,2 +1,17 @@
+# IDEs e Editores
 .editor/
 .idea/
+.vscode/
+
+# Artefatos de compilação do SCSS
+style.css
+style.css.map
+.sass-cache/
+
+# Dependências (caso utilize npm init futuramente)
+node_modules/
+package-lock.json
+
+# Arquivos do Sistema Operacional
+Thumbs.db
+.DS_Store
