@@ -1,9 +1,10 @@
 .services {
     background-color: #1b1c20;
-    margin: 80px 16px 0; 
+    margin-top: 80px;
+    width: calc(100% - 32px); //Garante 16px de espaço em cada lado nas telas menores
     padding: 48px 24px;
     border-radius: 15px;
-    color: $white-normal;
+    color: $white-normal;    
 
     &-title {
         display: flex;
@@ -21,12 +22,12 @@
     }    
 
     &-name {
-        flex-shrink: 1; // Permite que o nome ocupe o espaço necessário
+        flex-shrink: 1; //Permite que o nome ocupe o espaço necessário
     }
 
     &-price {
-        white-space: nowrap; // Impede que o "R$" se separe do número
-        flex-shrink: 0;      // Garante que o preço nunca seja esmagado
+        white-space: nowrap; //Impede que o "R$" se separe do número
+        flex-shrink: 0;      //Garante que o preço nunca seja esmagado
     }
 
     &-list {
@@ -40,7 +41,7 @@
     &-item {
         display: flex;
         align-items: baseline;
-        // Tipografia fluida: min 14px, ideal 4vw, max 20px
+        //Tipografia fluida: min 14px, ideal 4vw, max 20px
         font-size: clamp(14px, 4vw, 20px); 
         font-weight: bold;
         letter-spacing: 1px;
@@ -49,7 +50,7 @@
     &-line {
         flex-grow: 1;
         border-bottom: 3px dotted #F5B921;
-        margin: 0 8px; // Reduzido para mobile para ganhar espaço
+        margin: 0 8px; //Reduzido para mobile para ganhar espaço
         opacity: 0.8;
     }
 
