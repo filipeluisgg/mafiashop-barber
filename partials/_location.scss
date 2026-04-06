@@ -1,0 +1,28 @@
+.location {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-title {
+        color: $white-normal;
+        font-size: clamp(24px, 6vw, 32px);
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    &-map {
+        width: calc(100% - 32px); //Garante 16px de espaço em cada lado nas telas menores
+        height: auto;
+        aspect-ratio: 4 / 3;
+        border: none;
+        border-radius: 12px;
+
+        @media screen and (min-width: 768px) {
+            width: 100%;
+            aspect-ratio: auto;
+            height: 550px;
+        }
+    }
+}
