@@ -13,7 +13,7 @@
     }
 
     &-map {
-        width: calc(100% - 32px); //Garante 16px de espaço em cada lado nas telas menores
+        width: 100%; //Garante 16px de espaço em cada lado nas telas menores
         height: auto;
         aspect-ratio: 4 / 3;
         border: none;
