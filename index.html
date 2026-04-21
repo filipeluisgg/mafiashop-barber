@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- BIBLIOTECA PARA ANIMAÇÕES (https://michalsnik.github.io/aos/) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- FONTE -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,6 +19,9 @@
     <!-- LINK PARA CSS -->
     <link rel="stylesheet" href="style.css" />
 
+    <!-- SCRIPT PARA INICIALIZAR A BIBLIOTECA DE ANIMAÇÕES (https://michalsnik.github.io/aos/) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <title>MafiaShop Barbearia</title>
 </head>
 
@@ -23,12 +29,18 @@
 <body>
     <!-- HEADER -->
     <header class="header">
-        <img class="header-logo" src="assets/logo-mafiashop-barbearia-minificado.jpg" alt="Logo da MafiaShop Barbearia">
+        <img class="header-logo" src="assets/logo-mafiashop-barbearia-minificado.webp" alt="Logo da MafiaShop Barbearia">
 
         <div class="header-icons">
-            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram fa-2x"></i></a>
-            <a href="#" aria-label="Threads"><i class="fa-brands fa-threads fa-2x"></i></a>
-            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok fa-2x"></i></a>
+            <a href="https://www.instagram.com/mafiashopbarbearia" aria-label="Instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.threads.com/@mafiashopbarbearia" aria-label="Threads" target="_blank" rel="noopener noreferrer" aria-label="Threads">
+                <i class="fa-brands fa-threads"></i>
+            </a>
+            <a href="#" aria-label="TikTok" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
         </div>
     </header>
 
@@ -41,7 +53,7 @@
                 COM NAVALHA E TOALHA QUENTE
             </h1>
  
-            <a href="#" class="button-contact" target="_blank">
+            <a href="https://wa.me/5567992521005?text=Opa!%20Quero%20fazer%20um%20agendamento." class="button-contact" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-whatsapp fa-2x"></i>
                 <span>Agendar horário</span>
             </a>
@@ -54,15 +66,16 @@
         <h2 class="presentation-title">Conheça nosso trabalho:</h2>
     
         <div class="presentation-gallery">
-            <img src="assets/gallery/corte-1.webp" alt="Corte e barba alinhados" loading="lazy" width="280" height="350">
-            <img src="assets/gallery/corte-2.webp" alt="Corte com degradê lateral" loading="lazy" width="280" height="350">
-            <img src="assets/gallery/corte-3.webp" alt="Barba e corte com degradê e topete" loading="lazy" width="280" height="350">
-            <img src="assets/gallery/corte-4.webp" alt="Barba e corte com degradê e topete" loading="lazy" width="280" height="350">
+            <img src="assets/gallery/corte-1.webp" data-aos="fade-up" data-aos-duration="200" alt="Corte e barba alinhados" loading="lazy" width="280" height="350">
+            <img src="assets/gallery/corte-2.webp" data-aos="fade-up" data-aos-duration="350" alt="Corte com degradê lateral" loading="lazy" width="280" height="350">
+            <img src="assets/gallery/corte-3.webp" data-aos="fade-up" data-aos-duration="500" alt="Barba e corte com degradê e topete" loading="lazy" width="280" height="350">
+            <img src="assets/gallery/corte-4.webp" data-aos="fade-up" data-aos-duration="650" alt="Barba e corte com degradê e topete" loading="lazy" width="280" height="350">
         </div>
     </section>
 
+
 <!-- QUADRO COM OS SERVIÇOS OFERECIDOS -->
-    <section class="services container">    
+    <section class="services container"  data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="500">
         <h2 class="services-title">
             <img src="assets/selo-servicos.webp" alt="Selo de qualidade" loading="lazy">
             Serviços oferecidos
@@ -121,7 +134,7 @@
 
 
 <!-- INTEGRAÇÃO COM GOOGLE MAPS -->
-    <section class="location container">
+    <section class="location container" data-aos="zoom-in-up" data-aos-duration="600">
 
         <h2 class="location-title">Venha cortar conosco!</h2>
         <iframe 
@@ -138,7 +151,7 @@
     <footer class="footer">
         <div class="footer-content container">
             <div class="footer-brand">
-                <img src="assets/logo-mafiashop-barbearia-minificado.jpg" alt="Logo MafiaShop Barbearia" loading="lazy" class="footer-logo">
+                <img src="assets/logo-mafiashop-barbearia-minificado.webp" alt="Logo MafiaShop Barbearia" loading="lazy" class="footer-logo">
                 <p>Tradição e estilo em cada corte.</p>
                 <p>Cuidando do seu visual com excelência!</p>
             </div>
@@ -163,6 +176,7 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 
