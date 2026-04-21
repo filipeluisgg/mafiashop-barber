@@ -46,6 +46,7 @@
 @media screen and (min-width: 768px) {
     .header {
         padding: 24px 48px;
+        padding-bottom: 10px;
 
         &-logo {
             max-width: 200px;
@@ -70,4 +71,3 @@
 i {
     color: $white-normal;
 }
-
