@@ -12,7 +12,7 @@
     content: '';
     display: block;
     position: absolute;
-    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../assets/foto-de-fundo-barbearia.webp");
+    background-image: linear-gradient(to bottom, rgba($primary-normal, 0.1), $primary-normal), url("../assets/foto-de-fundo-barbearia.webp");
     left: 0;
     top: 0;
     width: 100%;
@@ -23,9 +23,9 @@
     background-position: 50% 0;
 
     @media screen and (min-width: 768px) {
-        background-image: 
-            linear-gradient(to bottom, #242021 1%, transparent 8px), //Novo gradiente: do header (#242021) para transparente
-            linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), //Gradiente original de escurecimento
+        background-image:
+            linear-gradient(to bottom, $surface-dark 1%, transparent 8px),
+            linear-gradient(to bottom, rgba($primary-normal, 0.1), $primary-normal),
             url("../assets/foto-de-fundo-barbearia.webp");
     }
 }
@@ -73,10 +73,6 @@
     &:hover {
         animation: scaleButton 0.8s alternate infinite;
     }
-}
-
-.button-contact:hover {
-    animation: scaleButton 0.8s alternate infinite;
 }
 
 @keyframes scaleButton {

@@ -1,5 +1,5 @@
 .footer {
-    background-color: #242021;
+    background-color: $surface-dark;
     color: $white-normal;
     padding-top: 64px;
 
@@ -45,7 +45,7 @@
     }
 
     &-title {
-        color: #F5B921;
+        color: $yellow-normal;
         font-size: 20px;
         margin-bottom: 16px;
         letter-spacing: 1px;
@@ -68,7 +68,7 @@
     }
 
     &-bottom {
-        border-top: 1px solid #454649;
+        border-top: 1px solid $gray-divider;
         text-align: center;
         padding: 24px 16px;
 
