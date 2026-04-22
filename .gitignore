@@ -4,8 +4,6 @@
 .vscode/
 
 # Artefatos de compilação do SCSS
-style.css
-style.css.map
 .sass-cache/
 
 # Dependências (caso utilize npm init futuramente)
